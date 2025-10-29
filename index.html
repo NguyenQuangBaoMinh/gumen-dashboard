@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Báo Cáo - Gumen Cafe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/gumenlogo.png">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-container">
+                <img src="images/gumenlogo.png" alt="Gumen Cafe Logo" class="logo">
+            </div>
+            <h1 class="main-title">Dashboard Phân Tích Vấn Đề Cuộc Họp Bộ Phận Ca Trưởng</h1>
+            <p class="subtitle">Hệ thống chuỗi cửa hàng Gumen Cafe</p>
+        </header>
+
+        <!-- Gallery Images -->
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/gumen1.jpeg" alt="Gumen Cafe 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gumen2.jpeg" alt="Gumen Cafe 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gumen3.jpeg" alt="Gumen Cafe 3">
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <nav class="tabs">
+            <button class="tab-button active" data-tab="tab1">
+                <span class="tab-number">1</span>
+                <span class="tab-title">Quy Trình Đào Tạo</span>
+            </button>
+            <button class="tab-button" data-tab="tab2">
+                <span class="tab-number">2</span>
+                <span class="tab-title">Đào Tạo Tình Huống</span>
+            </button>
+            <button class="tab-button" data-tab="tab3">
+                <span class="tab-number">3</span>
+                <span class="tab-title">Xếp Ca & Phân Công</span>
+            </button>
+            <button class="tab-button" data-tab="tab4">
+                <span class="tab-number">4</span>
+                <span class="tab-title">Thi Đua & Tay Nghề</span>
+            </button>
+            <button class="tab-button" data-tab="tab5">
+                <span class="tab-number">5</span>
+                <span class="tab-title">Văn Hóa & Ca Trưởng</span>
+            </button>
+        </nav>
+
+        <!-- Tab Contents -->
+        <div class="tab-content-wrapper">
+            <!-- Tab 1: Quy Trình Đào Tạo -->
+            <div id="tab1" class="tab-content active">
+                <h2 class="section-title">1. Quy Trình Đào Tạo Nhân Sự</h2>
+                
+                <div class="content-section">
+                    <h3 class="subsection-title">A. Những Điểm Khó Tiếp Thu Hiện Tại</h3>
+                    <div class="card-grid">
+                        <div class="card issue-card">
+                            <div class="card-header">
+                                <span class="card-number">1</span>
+                                <h4>Giấy Ghi Doanh Thu</h4>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Vấn đề:</strong> Nhân sự mới chưa hiểu rõ ý nghĩa của giấy doanh thu, việc học chỉ mang tính ràng buộc.</p>
+                                <ul>
+                                    <li>Các mục số liệu về cân, đo, đong, đếm chưa được phân bổ rõ ràng</li>
+                                    <li>Khó hình dung NVL nào cần cân hay đếm</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card issue-card">
+                            <div class="card-header">
+                                <span class="card-number">2</span>
+                                <h4>Lý Thuyết & Thực Hành</h4>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Vấn đề:</strong> Sự ràng buộc giữa lý thuyết và thực hành chưa chặt chẽ.</p>
+                                <ul>
+                                    <li>Lý thuyết cần đi đôi với thực hành nhiều hơn</li>
+                                    <li>Các bạn cần có thêm kinh nghiệm thực chiến</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card issue-card">
+                            <div class="card-header">
+                                <span class="card-number">3</span>
+                                <h4>Tinh Thần Gumen</h4>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Vấn đề:</strong> Thiếu tinh thần Gumen trong quá trình đào tạo.</p>
+                                <ul>
+                                    <li>Số lượng ca trưởng thực thụ chưa đủ để training nhân viên mới</li>
+                                    <li>Chỉ dạy "phải làm thế này" chứ không dạy "lý do tại sao"</li>
+                                    <li>Nhân viên có tinh thần học vẹt cho xong việc</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h3 class="subsection-title">B. Đề Xuất Thiết Kế Lại Chương Trình</h3>
+                    <div class="proposal-list">
+                        <div class="proposal-item">
+                            <div class="proposal-icon">💡</div>
+                            <div class="proposal-content">
+                                <h4>Thêm buổi training sau ca làm</h4>
+                                <p>Tổ chức các buổi training bổ sung sau giờ làm việc để củng cố kiến thức và kỹ năng.</p>
+                            </div>
+                        </div>
+                        <div class="proposal-item">
+                            <div class="proposal-icon">📊</div>
+                            <div class="proposal-content">
+                                <h4>Xây dựng Dashboard trực quan</h4>
+                                <p>Trực quan hóa các phần việc trong các khâu để nhân sự mới hiểu được ý nghĩa của các vấn đề thực hiện, tránh học khô khan và học vẹt.</p>
+                            </div>
+                        </div>
+                        <div class="proposal-item">
+                            <div class="proposal-icon">👥</div>
+                            <div class="proposal-content">
+                                <h4>Phân bố người hợp lý</h4>
+                                <p>Phân bố người thích hợp cho việc training, đảm bảo chất lượng đào tạo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Đào Tạo Tình Huống -->
+            <div id="tab2" class="tab-content">
+                <h2 class="section-title">2. Cách Đào Tạo Nhân Sự Chi Tiết Về Tình Huống</h2>
+                
+                <div class="situation-grid">
+                    <!-- Khách hàng -->
+                    <div class="situation-card">
+                        <div class="situation-header customer">
+                            <h3>👤 Khách Hàng</h3>
+                        </div>
+                        <div class="situation-body">
+                            <div class="situation-item">
+                                <h4>Làm sai loại cafe cho khách</h4>
+                                <div class="situation-detail">
+                                    <p><span class="label-negative">Phản xạ hiện tại:</span> Chỉ phản ứng đổi ly chưa có động thái xin lỗi/nói khéo khách.</p>
+                                    <p><span class="label-positive">Cách xử lý đề xuất:</span> Nên nhận phận lỗi về bản thân, thân thiện khéo léo xử lý.</p>
+                                </div>
+                            </div>
+                            <div class="situation-item">
+                                <h4>Khách đông chưa order</h4>
+                                <div class="situation-detail">
+                                    <p><span class="label-negative">Phản xạ hiện tại:</span> Chưa chủ động hỏi khi thấy khách lạ.</p>
+                                    <p><span class="label-positive">Cách xử lý đề xuất:</span> Nên chủ động hơn và có tinh thần nhanh nhạy, phản xạ linh hoạt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Đồng nghiệp -->
+                    <div class="situation-card">
+                        <div class="situation-header colleague">
+                            <h3>🤝 Đồng Nghiệp</h3>
+                        </div>
+                        <div class="situation-body">
+                            <div class="situation-item">
+                                <h4>Các bạn làm chung 1 ca chưa có sự teamwork</h4>
+                                <div class="situation-detail">
+                                    <p><span class="label-negative">Phản xạ hiện tại:</span> Các bạn chỉ đang thực hiện cá nhân phần việc của mình mà chưa quan tâm tới chất lượng thời gian, linh hoạt để tối ưu quy trình.</p>
+                                    <p><span class="label-positive">Cách xử lý đề xuất:</span> Xử lý nhiều tác vụ cùng lúc, phối hợp và hiểu rõ cách làm của partner để thực hiện.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Xóm làng -->
+                    <div class="situation-card">
+                        <div class="situation-header community">
+                            <h3>🏘️ Xóm Làng</h3>
+                        </div>
+                        <div class="situation-body">
+                            <div class="situation-item">
+                                <h4>Vấn đề vệ sinh còn tồn động</h4>
+                                <div class="situation-detail">
+                                    <p><span class="label-negative">Phản xạ hiện tại:</span> Chưa chủ động thực hiện việc dọn vệ sinh, kể cả các vệ sinh không thuộc phạm vi của mình.</p>
+                                    <p><span class="label-positive">Cách xử lý đề xuất:</span> Chủ động dọn rác của cô trong nhà/biệt thự, kèm theo là chào hỏi bằng mắt/cười với xóm làng để tạo cảm giác thân thiện.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tay nghề -->
+                    <div class="situation-card">
+                        <div class="situation-header skill">
+                            <h3>⚡ Tay Nghề</h3>
+                        </div>
+                        <div class="situation-body">
+                            <div class="situation-item">
+                                <h4>Pha cần</h4>
+                                <div class="situation-detail">
+                                    <p><span class="label-negative">Phản xạ hiện tại:</span> Còn kém vì ảnh hưởng của tâm lý khi làm ở các chi nhánh đông.</p>
+                                    <p><span class="label-positive">Cách xử lý đề xuất:</span> Cần có nhân sự cứng kèm cặp và take care thêm.</p>
+                                </div>
+                            </div>
+                            <div class="situation-item">
+                                <h4>Chưa tăng tốc độ làm</h4>
+                                <div class="situation-detail">
+                                    <p><span class="label-negative">Phản xạ hiện tại:</span> Cứ 1 tâm thế làm thực hiện công việc mà chưa phân bổ được lúc nào cần thư thả, lúc nào cần tăng tốc độ.</p>
+                                    <p><span class="label-positive">Cách xử lý đề xuất:</span> Linh hoạt, tập trung vào vấn đề làm việc để đạt hiệu quả cao.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tài sản -->
+                    <div class="situation-card">
+                        <div class="situation-header asset">
+                            <h3>💼 Tài Sản</h3>
+                        </div>
+                        <div class="situation-body">
+                            <div class="situation-item">
+                                <h4>Chưa có tâm thế kiểm kê tài sản</h4>
+                                <div class="situation-detail">
+                                    <p><span class="label-negative">Phản xạ hiện tại:</span> Các bạn đôi khi làm không nhận ra là tài sản nào bị mất, tài sản nào sử dụng bị hư hại.</p>
+                                    <p><span class="label-positive">Cách xử lý đề xuất:</span> Cần nhắc nhở nhau thường xuyên chú ý giữa các bạn cùng làm chung để bảo vệ tài sản.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Xếp Ca & Phân Công -->
+            <div id="tab3" class="tab-content">
+                <h2 class="section-title">3. Cách Xếp Ca - Khâu Pha Chế + Pha Cần</h2>
+                
+                <div class="highlight-box">
+                    <div class="highlight-icon">⚠️</div>
+                    <div class="highlight-content">
+                        <h3>Tầm Quan Trọng Của Việc Sắp Xếp Ca</h3>
+                        <p>Vấn đề sắp xếp khâu hằng ngày thực sự cần thiết và quan trọng, tùy vào từng điều kiện cũng như khả năng mà người quản lý cần phải phân bổ hợp lý.</p>
+                    </div>
+                </div>
+
+                <div class="key-points">
+                    <div class="key-point-item">
+                        <div class="key-point-icon">🔄</div>
+                        <div class="key-point-content">
+                            <h4>Linh Hoạt Các Vị Trí</h4>
+                            <p>Trong quá trình bán cũng sẽ nên linh hoạt các vị trí giữa các khâu để đảm bảo chất lượng, thời gian hoàn thành sản phẩm.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="key-point-item">
+                        <div class="key-point-icon">💪</div>
+                        <div class="key-point-content">
+                            <h4>Phát Triển Kỹ Năng</h4>
+                            <p>Điều này sẽ giúp các bạn nhân sự linh hoạt và nhận thấy vấn đề để giải quyết kịp thời.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="key-point-item">
+                        <div class="key-point-icon">🎯</div>
+                        <div class="key-point-content">
+                            <h4>Vai Trò Ca Trưởng</h4>
+                            <p><strong>Cần có ca trưởng có tầm nhìn và chiến lược phù hợp.</strong> Nếu không có ca trưởng, các bạn trong ca cũng cần phải có tâm thế chủ động này.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-diagram">
+                    <h3 class="diagram-title">Quy Trình Phân Công Tối Ưu</h3>
+                    <div class="process-flow">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <h4>Đánh Giá Năng Lực</h4>
+                            <p>Xác định điểm mạnh của từng nhân viên</p>
+                        </div>
+                        <div class="process-arrow">→</div>
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <h4>Phân Bổ Vị Trí</h4>
+                            <p>Sắp xếp vị trí phù hợp với khả năng</p>
+                        </div>
+                        <div class="process-arrow">→</div>
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <h4>Theo Dõi & Điều Chỉnh</h4>
+                            <p>Linh hoạt thay đổi khi cần thiết</p>
+                        </div>
+                        <div class="process-arrow">→</div>
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <h4>Đánh Giá Hiệu Quả</h4>
+                            <p>Rút kinh nghiệm và cải tiến</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 4: Thi Đua & Tay Nghề -->
+            <div id="tab4" class="tab-content">
+                <h2 class="section-title">4. Thi Đua Và Luyện Tay Nghề</h2>
+                
+                <div class="intro-text">
+                    <p>Vấn đề thi đua và rèn luyện tay nghề định kỳ là thực sự cần thiết trong xuyên suốt quá trình vận hành và phát triển của Gumen.</p>
+                </div>
+
+                <div class="competition-grid">
+                    <div class="competition-card">
+                        <div class="competition-header">
+                            <span class="competition-number">1</span>
+                            <h3>Hình Thức Tổ Chức</h3>
+                        </div>
+                        <div class="competition-body">
+                            <div class="problem">
+                                <h4>⚠️ Vấn đề:</h4>
+                                <p>Các cuộc thi bị đình trệ và chưa được khởi xướng</p>
+                            </div>
+                            <div class="solution">
+                                <h4>✅ Cách thực hiện:</h4>
+                                <div class="competition-types">
+                                    <div class="comp-type">
+                                        <span class="comp-icon">🏆</span>
+                                        <span>Cá nhân</span>
+                                    </div>
+                                    <div class="comp-type">
+                                        <span class="comp-icon">👥</span>
+                                        <span>Đồng đội</span>
+                                    </div>
+                                    <div class="comp-type">
+                                        <span class="comp-icon">⚔️</span>
+                                        <span>Đối kháng</span>
+                                    </div>
+                                </div>
+                                <p class="timeline"><strong>⏰ Thời gian:</strong> Định kỳ 2 tháng 1 lần (không kể mới hay cũ)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="competition-card">
+                        <div class="competition-header">
+                            <span class="competition-number">2</span>
+                            <h3>Daily Testing</h3>
+                        </div>
+                        <div class="competition-body">
+                            <div class="problem">
+                                <h4>⚠️ Vấn đề:</h4>
+                                <p>Chưa có daily testing ở các group tương tác</p>
+                            </div>
+                            <div class="solution">
+                                <h4>✅ Cách thực hiện:</h4>
+                                <ul>
+                                    <li>Mini game nhỏ trên group và khen thưởng trực tiếp với vài câu hỏi nhỏ</li>
+                                    <li>Thiết lập 1 hệ thống web random các câu hỏi để các bạn có thể làm online bất kỳ thời gian nào</li>
+                                    <li>Đảm bảo câu hỏi tráo lộn mỗi lần thực hiện để các bạn không copy</li>
+                                </ul>
+                                <p class="timeline"><strong>⏰ Thời gian:</strong> Theo tuần hoặc linh hoạt</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="competition-card">
+                        <div class="competition-header">
+                            <span class="competition-number">3</span>
+                            <h3>Cơ Cấu Giải Thưởng</h3>
+                        </div>
+                        <div class="competition-body">
+                            <div class="problem">
+                                <h4>⚠️ Vấn đề:</h4>
+                                <p>Cơ cấu giải thưởng cần tăng thêm để kích thích sự tập trung</p>
+                            </div>
+                            <div class="solution">
+                                <h4>✅ Cách thực hiện:</h4>
+                                <p>Giải thưởng sẽ đi đôi với ý thức tập trung, cần đầu tư cho vấn đề này:</p>
+                                <div class="rewards-list">
+                                    <div class="reward-item">
+                                        <span class="reward-icon">💰</span>
+                                        <span>Tiền thưởng</span>
+                                    </div>
+                                    <div class="reward-item">
+                                        <span class="reward-icon">🎁</span>
+                                        <span>Quà tặng</span>
+                                    </div>
+                                    <div class="reward-item">
+                                        <span class="reward-icon">☕</span>
+                                        <span>Thức uống</span>
+                                    </div>
+                                </div>
+                                <p class="note"><strong>Lưu ý:</strong> Có thưởng và có phạt cụ thể. Linh hoạt, tuỳ biến.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 5: Văn Hóa & Ca Trưởng -->
+            <div id="tab5" class="tab-content">
+                <h2 class="section-title">5. 6 Nguyên Tắc Văn Hóa & Vai Trò Ca Trưởng</h2>
+                
+                <div class="culture-section">
+                    <div class="culture-header">
+                        <h3>📋 6 Nguyên Tắc Văn Hóa Gumen</h3>
+                        <p class="emphasis">BẮT BUỘC CA TRƯỞNG PHẢI HỌC THUỘC VÀ THỰC SỰ HIỂU RÕ Ý NGHĨA</p>
+                    </div>
+                    <div class="agreement-box">
+                        <span class="check-icon">✓</span>
+                        <p>Nhất trí và tán thành ý kiến</p>
+                    </div>
+                </div>
+
+                <div class="leadership-section">
+                    <h3 class="section-subtitle">6. Hỏi Cá Nhân Ca Trưởng</h3>
+                    
+                    <!-- Part A -->
+                    <div class="leadership-card">
+                        <div class="leadership-header part-a">
+                            <h4>A. Để mỗi thành viên làm ở Gumen không chỉ vì lương và vì văn hóa</h4>
+                        </div>
+                        <div class="leadership-body">
+                            <div class="principle-list">
+                                <div class="principle-item">
+                                    <div class="principle-icon">🎯</div>
+                                    <div class="principle-content">
+                                        <h5>Vai Trò Quản Lý</h5>
+                                        <p>Cốt yếu nằm ở các vị trí quản lý và điều hành. Bắt buộc các quản lý/ca trưởng phải luôn quan tâm và take care các bạn nhân sự.</p>
+                                    </div>
+                                </div>
+
+                                <div class="principle-item">
+                                    <div class="principle-icon">🏢</div>
+                                    <div class="principle-content">
+                                        <h5>Môi Trường Chuyên Nghiệp</h5>
+                                        <p>Luôn cho các bạn thấy được quy trình và môi trường vận hành ở Gumen chuyên nghiệp, lành mạnh, greenflag.</p>
+                                    </div>
+                                </div>
+
+                                <div class="principle-item">
+                                    <div class="principle-icon">📚</div>
+                                    <div class="principle-content">
+                                        <h5>Phát Triển Kỹ Năng Sống</h5>
+                                        <p>Ngoài việc đào tạo làm việc còn cần phải giúp các bạn có thêm nhiều kỹ năng và xứng xử, tâm lý ở cuộc sống xã hội.</p>
+                                    </div>
+                                </div>
+
+                                <div class="principle-item">
+                                    <div class="principle-icon">⭐</div>
+                                    <div class="principle-content">
+                                        <h5>Trọng Dụng Tài Năng</h5>
+                                        <p>Trọng dụng được điểm mạnh, điểm yếu của các bạn nhân sự, nhận ra các vấn đề của từng bạn và quan tâm, chiếu cố các bạn đó.</p>
+                                    </div>
+                                </div>
+
+                                <div class="principle-item">
+                                    <div class="principle-icon">💬</div>
+                                    <div class="principle-content">
+                                        <h5>Giao Tiếp Cởi Mở</h5>
+                                        <p>Hỏi thăm, động viên, chủ động và cởi mở với các bạn để các bạn luôn có tâm thế bạn thân được tôn trọng và không có khoảng cách giữa người quản lý và người nhân viên.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="insight-box">
+                                <div class="insight-icon">💡</div>
+                                <div class="insight-content">
+                                    <p><strong>Nhận định:</strong> Văn hóa là lý luận, còn để thực tiễn lý luận đó được ảnh hưởng và trở thành ứng dụng thực tế thì cần phải trải qua nhiều quá trình tôi luyện, cần mẫn và nhận thức để tạo nên lòng tin, sự thấu hiểu lẫn nhau. <span class="highlight-text">Nếu chỉ có lắng nghe mà không thấu hiểu thì khó mà biến văn hóa thành thực tiễn được.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Part B -->
+                    <div class="leadership-card">
+                        <div class="leadership-header part-b">
+                            <h4>B. Cách hành xử và ngôn ngữ của cấp ca trưởng là vô cùng quan trọng</h4>
+                        </div>
+                        <div class="leadership-body">
+                            <div class="importance-grid">
+                                <div class="importance-card">
+                                    <div class="importance-number">1</div>
+                                    <h5>Chuẩn Mực Văn Hóa</h5>
+                                    <p>Lời nói của họ là chuẩn mực của "Văn hóa", là những người định hình nên môi trường cũng như văn hóa của một hệ thống.</p>
+                                </div>
+
+                                <div class="importance-card">
+                                    <div class="importance-number">2</div>
+                                    <h5>Ảnh Hưởng Sâu Sắc</h5>
+                                    <p>Họ là người trực tiếp, tiếp xúc với các bạn nhân sự cho nên lời nói của họ ảnh hưởng sâu sắc vào trong suy nghĩ cũng như tư duy của các bạn ấy.</p>
+                                </div>
+
+                                <div class="importance-card">
+                                    <div class="importance-number">3</div>
+                                    <h5>Tấm Gương Soi</h5>
+                                    <p>Cách hành xử và ngôn ngữ của họ sẽ là các tấm gương soi đường cho các bạn cấp dưới noi theo. <em>"Một người đủ tâm đủ tâm thì ắt lời nói và giá trị đủ sâu và đủ sắc"</em> để mà có thể thấu vào tận tâm của sự thấu hiểu giữa người với người.</p>
+                                </div>
+
+                                <div class="importance-card">
+                                    <div class="importance-number">4</div>
+                                    <h5>Xây Dựng Đội Ngũ</h5>
+                                    <p>Giúp tạo được hình tượng tích cực thoải mái và xây dựng lên một đội ngũ nhân sự tận tâm, tận lực và cống hiến.</p>
+                                </div>
+
+                                <div class="importance-card">
+                                    <div class="importance-number">5</div>
+                                    <h5>Kiểm Soát Khủng Hoảng</h5>
+                                    <p>Chính cách cư xử và lời nói chuẩn mực của các vị trí cấp cao đó sẽ là động lực để kiểm soát và giải quyết được mọi vấn đề khủng hoảng trong hệ thống vận hành của Gumen.</p>
+                                </div>
+                            </div>
+
+                            <div class="conclusion-box">
+                                <h5>🎯 Kết Luận</h5>
+                                <p>Chính vì yếu tố cốt lõi này sẽ ảnh hưởng toàn diện nhất đến các vấn đề được nêu ở trên và tạo nên sự khác biệt trong văn hóa doanh nghiệp Gumen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 Gumen Cafe - Dashboard Báo Cáo Nội Bộ</p>
+            <p class="footer-note">Tài liệu này được tạo để trực quan hóa và phân tích các vấn đề trong cuộc họp bộ phận ca trưởng</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
